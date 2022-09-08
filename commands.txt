@@ -1,0 +1,74 @@
+https://github.com/SFJBS-FSD-1/test-python-program-AbhishekSavakar
+
+git config --global user.email "abhisheksavakar1998@gmail.com"
+
+git config --global user.name "AbhishekSavakar"
+
+git remote add origin https://github.com/SFJBS-FSD-1/test-python-program-AbhishekSavakar
+
+git clone https://github.com/SFJBS-FSD-1/test-python-program-AbhishekSavakar
+
+
+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
+
+
+Tell Git who you are:
+git config --global user.name "Sam Smith"
+git config --global user.email sam@example.com
+
+
+Connect to a remote repository:
+git remote add origin <server>
+git clone <server>
+
+
+Change the folder to one which is created:
+cd ./folder
+
+Add files:
+git add <filename>
+
+Commit:
+git commit -m "Commit message"
+
+Push:
+git push origin main
+
+Status:
+git status
+
+Branches:
+git branch
+
+
+pip install flask
+pip install flask_sqlalchemy
+pip install pymysql
+pip install requests
+pip install passlib
+pip install flask_restful
+pip install flask_migrate
+
+
+"""
+Python Console Commands
+
+from filename import db
+db.create_all()
+from filename import Profile
+newuser1=Profile(username="rohit",email='rohit@gmail.com')
+newuser2=Profile(username="virat",email='virat@gmail.com')
+newuser3=Profile(username="bumra",email='bumra@gmail.com')
+newuser4=Profile(username="rahul",email='rahul@gmail.com')
+db.session.add(newuser)
+db.session.commit()
+Profile.query.all()
+"""
+
+"""
+Python Terminal Commands
+flask --app applogin.py db init
+flask --app applogin.py db migrate
+flask --app applogin.py db upgrade
+
+"""

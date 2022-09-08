@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Create New Account</title>
+
+</head>
+
+<center>
+    <body text="#E3C770" bgcolor="#0F3460">
+    <div class="col-md-6 col-md-offset-3">
+        <h1> Please Enter details to create new account!</h1>
+        <form method="post" action="/create">
+            <input type="text" placeholder="User Name" name="name"">
+            <br>
+            <br>
+            <input type="text" placeholder="Password" name="password">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    {% if data.code == 400 %}
+    <h1>User name already exist</h1>
+    {% elif data.code == 200 %}
+    <h3>New user added!!!!!</h3>
+                <form method="post" action="/">
+        <input type="submit" name="submit_button" value="Login">
+            <br>
+            <br>
+        </form>
+
+    {% else %}
+    {% endif %}
+    </div>
+    </body>
+
+</center>
+
+</html>
+
+

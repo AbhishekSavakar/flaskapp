@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+
+</head>
+
+<center>
+    <body text="#E3C770" bgcolor="#0F3460">
+    <div class="col-md-6 col-md-offset-3">
+        <h1> Welcome login page!</h1>
+
+        <form method="post" action="/login">
+            <input type="text" placeholder="User Name" name="name"">
+            <br>
+            <br>
+            <input type="text" placeholder="Password" name="password">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    {% if data.code == 400 %}
+    <h1>Either username or password is incorrect</h1>
+    {% else %}
+    {% endif %}
+    </div>
+    </body>
+
+</center>
+
+</html>
+
+
